@@ -1,0 +1,98 @@
+:root{
+    --primary-color: #019a33;
+    --secondary-color: #feff00;
+    --header-bg-color: #019a33;
+    --header-font-color: #f0f0f0;
+    --main-title-color : #fff;
+    --body-color: #fff;
+    --primary-font-color: #019a33;
+    --main-font-color: rgb(100, 98, 98);
+    --light-toggle: var(--secondary-color);
+    
+}
+
+/* login main */
+main {
+    display: grid;
+    gap:1rem;
+    padding-top: 10vh;
+    justify-content: center;
+
+}
+
+main .login-title {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-transform: capitalize;
+    padding-top: 3rem;
+    padding-left: 2rem;
+}
+
+main .login-form form {
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--body-color);
+    /* padding: 2rem 4rem; */
+    border: .2em solid var(--primary-color);
+    border-radius: 1em;
+    text-align: center;
+}
+
+.login-form label {
+    font-size: 1.2rem;
+    color:var(--primary-color);
+    margin-top: 2rem;
+    margin-bottom: .8rem;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.login-form input {
+    width: 90%;
+    margin-inline:auto;
+    font-size: 1.2rem;
+    background-color: var(--primary-color);
+    border:none;
+    outline:none;
+    color:var(--main-title-color);
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+
+}
+
+
+.login-form input , label {
+    display: block;
+}
+
+
+
+
+
+.forgot-password {
+    color:var(--primary-color);
+    font-weight: bolder;
+    font-size: 1rem;
+    margin:1.5rem 0;
+}
+
+.login-btn {
+    font-size: 1rem;
+    font-weight: bolder;
+    border:none;
+    padding:.5rem 1rem;
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+    color:var(--body-color);
+    margin-bottom: 2rem;
+}
+
+
+
+@media (min-width: 600px) {
+    main {
+        grid-template-columns: 1fr .8fr;
+    }
+}
